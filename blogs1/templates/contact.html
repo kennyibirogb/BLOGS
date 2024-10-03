@@ -1,0 +1,127 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link href="{% static "CSS/bootstrap-5.3.3-dist/css/bootstrap.min.css" %}" rel="stylesheet">
+  <script src="{% static "CSS/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" %}"></script>
+  <link rel="stylesheet" href="{% static "CSS/fontawesome-free-6.6.0-web/css/all.css" %}">
+</head>
+<body>
+  <!--Naviagtion-->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mr-5">
+        <!--for the BLOGSPOT logo-->
+      <a class="navbar-brand mr-5 p-5" href="#"><strong class="text-dark" style="font-weight: bold; font-size: 25px;">BLOG</strong><strong class="text-danger" style="font-weight: bold; font-size: 25px;">SPOT</strong></a>
+        <!--the dropdown button-->
+      <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-5 mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong class="text-dark">HOME</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong class="text-dark">BLOGS</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong class="text-dark">CONTACTS</strong></a>
+          </li>
+          <li>
+            <a class="nav-link" href="#"><i class="fa fa-user"></i></a>
+          </li>
+        </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="conatiner bg-dark mt-5 b-5" style="height: 300px;"> conatct us </div>
+
+  <section class="container mt-5">
+    <h5 class="text-dark" style="font-weight: bold;">SEND US A MESSAGE</h5>
+    <hr>
+    <div class="container">
+      <form action="#">
+        <div class="input-group">
+          <input type="text" placeholder="NAME" class="form-control">
+        </div>
+        <div class="input-group mt-3">
+          <input type="text" name="email" class="form-control" placeholder="EMAIL">
+        </div>
+        <div class="input-group mt-3">
+          <input type="text" name="subject" placeholder="SUBJECT" class="form-control">
+        </div>
+        <div class="input-group mt-3">
+          <textarea name="mesage" class="form-control" placeholder="MESSAGE"></textarea>
+        </div>
+        <button class="btn bg-danger text-light mt-5 align-items-center">SEND MESSAGE</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="container mt-5">
+    <h5 class="dark-dark" style="font-weight: bold;">CONTACT INFORMATION</h5>
+    <hr>
+    <h5 class="text-dark mt-3">+91 8976567898</h5>
+    <p>PHONE NUMBER</p>
+    <hr>
+    <h5 class="text-dark mt-3">blogspot@gmail.com</h5>
+    <p>EMAIL ADDRESS</p>
+    <hr>
+    <h5 class="text-dark mt-3">123 Raiji Nagar, <br>Bangalore, Karnataka 560032</h5>
+    <p>STREET ADDRESS</p>
+  </section>
+
+  <footer class="bg-dark mt-5" style="height: 450px;">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">SERVICE</h4>
+          <ul>
+            <li><a href="#" class="text-light text-decoration-none">Shipping & Returns</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">ACCOUNT</h4>
+          <ul>
+            <li><a href="#" class="text-light text-decoration-none">Login</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Signup</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">INFORMATION</h4>
+          <ul>
+            <li><a href="#" class="text-light text-decoration-none">Our Story</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Find a stocklist</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">CONNECT</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/keerti-vishwkarma-8ba754243/" class="text-light text-decoration-none">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/keerti-vishwkarma-8ba754243/" class="text-light text-decoration-none">Instagram</a></li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="p-3">
+            <p class="text-light text-decoration-none">Developed with 💖 by <a href="https://www.linkedin.com/in/keerti-vishwkarma-8ba754243/">Keerti</a> <br>
+              &copy; Copyright 2023 | All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

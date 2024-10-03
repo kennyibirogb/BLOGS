@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create</title>
+  <link href="{% static "CSS/bootstrap-5.3.3-dist/css/bootstrap.min.css" %}" rel="stylesheet">
+  <script src="{% static "CSS/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" %}"></script>
+  <link rel="stylesheet" href="{% static "CSS/fontawesome-free-6.6.0-web/css/all.css" %}">
+</head>
+<body>
+  <div class="container-fluid"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mr-5">
+        <!--for the BLOGSPOT logo-->
+      <a class="navbar-brand mr-5 p-5" href="#"><strong class="text-dark" style="font-weight: bold; font-size: 25px;">BLOG</strong><strong class="text-danger"  style="font-weight: bold; font-size: 25px;">SPOT</strong></a>
+        <!--the dropdown button-->
+      <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-5 mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong class="text-dark">HOME</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong class="text-dark">BLOGS</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong class="text-dark">CREATE</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong class="text-dark">PROFILE</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><strong class="text-primary">LOGOUT</strong></a>
+          </li>
+        </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid mb-5 mt-5">
+    <div class="d-flex justify-content-center align-items-center">
+      <form action="#" class="p-5 shadow" style="height: 550px; width: 40%;">
+        <h4 class="text-danger" style="font-weight: bold; font-size: 30px;">Create Blog</h4>
+        <label for="Title" class="form-label mt-2" style="font-size: 18px;">Title</label>
+        <div class="input-group">
+          <input type="text" class="form-control" name="Title" required>
+        </div>
+        <label for="Content" class="form-label">Content</label>
+        <div class="input-group">
+          <textarea name="content" id="#" style="width: 100%;"></textarea>
+        </div>
+        <label for="category" class="form-label">Category</label>
+        <div class="input-group">
+          <input type="text" class="form-control" required>
+        </div>
+        <label for="image" class="form-label">Upload image</label>
+        <div class="input-group">
+          <span class="input-group-text">Choose file</span>
+            <input type="text" class="form-control" name="username" placeholder="No file Chosen">
+        </div>
+        <button class="btn bg-danger mt-5 align-items-center text-light" style="width: 100%; font-size: 20px;">Create Blog</button>
+      </form>
+    </div>
+  </div>
+
+
+  <footer class="bg-dark mt-5" style="height: 450px;"></footer>
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">SERVICE</h4>
+          <ul>
+            <li><a href="#" class="text-light text-decoration-none">Shipping & Returns</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">ACCOUNT</h4>
+          <ul>
+            <li><a href="#" class="text-light text-decoration-none">Login</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Signup</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">INFORMATION</h4>
+          <ul>
+            <li><a href="#" class="text-light text-decoration-none">Our Story</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Find a stocklist</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">CONNECT</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/keerti-vishwkarma-8ba754243/" class="text-light text-decoration-none">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/keerti-vishwkarma-8ba754243/" class="text-light text-decoration-none">Instagram</a></li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="p-3">
+            <p class="text-light text-decoration-none">Developed with 💖 by <a href="https://www.linkedin.com/in/keerti-vishwkarma-8ba754243/">Keerti</a> <br>
+              &copy; Copyright 2023 | All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

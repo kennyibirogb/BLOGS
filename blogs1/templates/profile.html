@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link href="{% static "CSS/bootstrap-5.3.3-dist/css/bootstrap.min.css" %}" rel="stylesheet">
+  <script src="{% static "CSS/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" %}"></script>
+  <link rel="stylesheet" href="{% static "CSS/fontawesome-free-6.6.0-web/css/all.css" %}">
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light mr-5">
+          <!--for the BLOGSPOT logo-->
+        <a class="navbar-brand mr-5 p-5" href="#"><strong class="text-dark" style="font-weight: bold; font-size: 25px;">BLOG</strong><strong class="text-danger"  style="font-weight: bold; font-size: 25px;">SPOT</strong></a>
+          <!--the dropdown button-->
+        <button class="navbar-toggler bg-danger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-5 mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong class="text-dark">HOME</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong class="text-dark">BLOGS</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong class="text-dark">CREATE</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong class="text-dark">PROFILE</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong class="text-dark">LOGOUT</strong></a>
+            </li>
+          </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+
+  <div class="container-fluid">
+    <section class="p-5">
+      <div class="row justify-content-center d-flex">
+        <div class="col-md-4">
+          <div class="card mt-3" style="height: 300px; border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background: linear-gradient(to top, #4b35d9, #eb31a7);">
+            <img src="{% static "IMAGES/profile2.webp" %}" alt="#" class="card-img-top mx-auto mt-3" style="width: 25%; border-radius: 50%;">
+            <div class="card-body align-items-center">
+              <h3 class="card-text text-light text-center mt-3" style="font-weight: bold;">Username</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-8">
+          <h4 style="font-size: 35px; font-weight: bold; color: #4b35d9;">Profile
+            <a class="float-end text-decoration-none text-success" style="font-size: 15px;">Edit Profile</a>
+          </h4>
+          <hr>
+          <P class="text-dark" style="font-weight: bold;">Firstname :-</P>
+          <P class="text-dark" style="font-weight: bold;">Lastname :-</P>
+          <P class="text-dark" style="font-weight: bold;">Email :-</P>
+          <h4 class="text-dark mt-5" style="font-weight: bold; font-size: medium;">My posts</h4>
+          <hr>
+        </div>
+      </div>
+    </section>
+    
+  </div>
+
+  <footer class="bg-dark mt-5" style="height: 450px;">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">SERVICE</h4>
+          <ul>
+            <li><a href="#" class="text-light text-decoration-none">Shipping & Returns</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Size Guide</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">ACCOUNT</h4>
+          <ul>
+            <li><a href="#" class="text-light text-decoration-none">Login</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Signup</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">INFORMATION</h4>
+          <ul>
+            <li><a href="#" class="text-light text-decoration-none">Our Story</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Find a stocklist</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <h4 class="text-light">CONNECT</h4>
+          <ul>
+            <li><a href="https://www.linkedin.com/in/keerti-vishwkarma-8ba754243/" class="text-light text-decoration-none">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/in/keerti-vishwkarma-8ba754243/" class="text-light text-decoration-none">Instagram</a></li>
+          </ul>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="p-3">
+            <p class="text-light text-decoration-none">Developed with 💖 by <a href="https://www.linkedin.com/in/keerti-vishwkarma-8ba754243/">Keerti</a> <br>
+              &copy; Copyright 2023 | All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
